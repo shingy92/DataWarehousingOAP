@@ -1,25 +1,14 @@
 {
     "dimensions": [
-        {
-         "name":"region"
-        },
-        {
-          "name":"age"
-        },
-        {
-          "name":"online_shopper"
-        }
+        {"name":"region"},
+        {"name":"age"},
+        {"name":"online_shopper"}
     ],
     "cubes": [
         {
             "name": "country_income_large",
             "dimensions": ["region", "age", "online_shopper"],
-            "measures": [
-              {
-                "name":"income",
-                "label":"Income"
-              }
-            ],
+            "measures": [{"name":"income","label":"Income"}],
             "aggregates": [
                     {
                         "name": "record_count",
@@ -45,7 +34,6 @@
                         "function": "max",
                         "measure": "income"
                     }
-
                 ]
         }
     ]
