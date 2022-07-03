@@ -36,7 +36,22 @@
                     {
                         "name": "record_count",
                         "function": "count"
-                    }
+                    },
+                    {
+                        "name": "amount_min",
+                        "function": "min",
+                        "measure": "amount"
+                    },
+                    {
+                        "name": "amount_max",
+                        "function": "max",
+                        "measure": "amount"
+                    },
+                    {
+                        "name": "amount_avg",
+                        "function": "avg",
+                        "measure": "amount"
+                    },
                 ],
             "mappings": {
                           "item.line_item": "line_item",
