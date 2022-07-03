@@ -51,7 +51,7 @@
                         "name": "amount_avg",
                         "function": "avg",
                         "measure": "amount"
-                    },
+                    }
                 ],
             "mappings": {
                           "item.line_item": "line_item",
