@@ -1,0 +1,52 @@
+{
+    "dimensions": [
+        {
+         "name":"region"
+        },
+        {
+          "name":"age"
+        },
+        {
+          "name":"online_shopper"
+        }
+    ],
+    "cubes": [
+        {
+            "name": "country_income_large",
+            "dimensions": ["region", "age", "online_shopper"],
+            "measures": [
+              {
+                "name":"income",
+                "label":"Income"
+              }
+            ],
+            "aggregates": [
+                    {
+                        "name": "record_count",
+                        "function": "count"
+                    },
+                    {
+                        "name": "amount_sum",
+                        "function": "sum",
+                        "measure": "income"
+                    },
+                    {
+                        "name": "amount_avg",
+                        "function": "avg",
+                        "measure": "income"
+                    },
+                    {
+                        "name": "amount_min",
+                        "function": "min",
+                        "measure": "income"
+                    },
+                    {
+                        "name": "amount_max",
+                        "function": "max",
+                        "measure": "income"
+                    }
+
+                ]
+        }
+    ]
+}
